@@ -1,0 +1,84 @@
+InvestFlex Clients Page Custom Styles
+
+/* Custom styles for InvestFlex clients page */
+body {
+    background-color: #6bc259;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    background-color: #08b35d;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item .date {
+    color: #6c757d;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.timeline-item .value {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        margin-left: 0 !important;
+    }
+}
